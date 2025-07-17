@@ -1,13 +1,15 @@
 {
-  "sample_rate": 2.56e6,          
+  "sample_rate": 2.56e6,          // RTL‑SDR max safe rate (or 8e6 for HackRF)
   "scan_interval_sec": 5,
   "peak_threshold_db": 28,
 
+  // Centre frequencies in MHz.  Add or remove values as your radio allows.
   "scan_bands_mhz": [
-    2401, 2427, 2453, 2479,       
-    5735, 5755, 5775, 5795, 5815  
+    2401, 2427, 2453, 2479,       // 2.4 GHz band
+    5735, 5755, 5775, 5795, 5815  // 5.8 GHz band (needs HackRF or similar)
   ],
 
+  // Log settings
   "alert_output": "alerts.jsonl",
   "alert_max_bytes": 2000000,
   "alert_backups": 3,
