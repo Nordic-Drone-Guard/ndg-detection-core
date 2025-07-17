@@ -1,0 +1,146 @@
+[
+  {
+    "drone": "DJI Phantom 4",
+    "freq_band": [
+      2405,
+      2475
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 35
+  },
+  {
+    "drone": "DJI Mavic Pro",
+    "freq_band": [
+      2400,
+      2483
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 30
+  },
+  {
+    "drone": "DJI Mavic Air",
+    "freq_band": [
+      2406,
+      2476
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 33
+  },
+  {
+    "drone": "DJI Mini 2",
+    "freq_band": [
+      2410,
+      2465
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 28
+  },
+  {
+    "drone": "DJI Air 2S",
+    "freq_band": [
+      2408,
+      2480
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 32
+  },
+  {
+    "drone": "Autel Evo II",
+    "freq_band": [
+      2410,
+      2460
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 30
+  },
+  {
+    "drone": "Parrot Anafi",
+    "freq_band": [
+      2450,
+      2470
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 20
+  },
+  {
+    "drone": "Yuneec Typhoon H",
+    "freq_band": [
+      2430,
+      2480
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 40
+  },
+  {
+    "drone": "Skydio 2",
+    "freq_band": [
+      2420,
+      2460
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 34
+  },
+  {
+    "drone": "Holy Stone HS720",
+    "freq_band": [
+      2440,
+      2483
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 25
+  },
+  {
+    "drone": "DJI Inspire 2",
+    "freq_band": [
+      2405,
+      2480
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 38
+  },
+  {
+    "drone": "DJI Matrice 300 RTK",
+    "freq_band": [
+      2407,
+      2478
+    ],
+    "burst_pattern": "adaptive",
+    "rssi_min": 40
+  },
+  {
+    "drone": "Walkera Voyager 4",
+    "freq_band": [
+      2455,
+      2475
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 30
+  },
+  {
+    "drone": "HubSan Zino Pro",
+    "freq_band": [
+      2435,
+      2470
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 22
+  },
+  {
+    "drone": "Xiaomi FIMI X8 SE",
+    "freq_band": [
+      2445,
+      2480
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 28
+  },
+  {
+    "drone": "Ruko F11 Pro",
+    "freq_band": [
+      2420,
+      2460
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 20
+  }
+]
