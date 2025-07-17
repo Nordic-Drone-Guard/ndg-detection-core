@@ -1,18 +1,24 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2025 Nordic Drone Guard
 
-import asyncio
-import random
+from rtlsdr import RtlSdr
+import numpy as np
 
 class SDRInterface:
     def __init__(self):
-        self.freq_range = (2400, 2500)
+        self.sdr = RtlSdr()
+        self.sdr.sample_rate = 2.4e6
+        self.sdr.center_freq = 2.45e9
+        self.sdr.gain = 'auto'
 
-    async def capture_signals(self):
-        await asyncio.sleep(0.1)
+    def capture_signals(self):
+        samples = self.sdr.read_samples(256 * 1024)
+        power = np.abs(np.fft.fft(samples))**2
+        peak = np.argmax(power)
+        freq_bin = self.sdr.center_freq - (self.sdr.sample_rate / 2) + (peak * self.sdr.sample_rate / len(samples))
         return [{
-            "freq": round(random.uniform(*self.freq_range), 2),
-            "rssi": random.randint(10, 90),
-            "burst_pattern": random.choice(["100Hz", "200Hz", "static"]),
-            "duration_ms": random.randint(300, 2500)
-        } for _ in range(random.randint(1, 4))]
+            "freq": round(freq_bin / 1e6, 2),
+            "rssi": int(np.max(power)),
+            "burst_pattern": "unknown",  # to be improved
+            "duration_ms": 500
+        }]
