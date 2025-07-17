@@ -72,7 +72,7 @@ Always check local laws before deployment.
 ## 📈 Roadmap
 
 - [x] Project structure and repo setup
-- [ ] Signal pattern database (basic models)
+- [x] Signal pattern database (basic models)
 - [ ] SDR live monitoring module
 - [ ] Desktop + mobile notifier system
 - [ ] Alpha field test on prototype device
