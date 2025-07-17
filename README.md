@@ -1,104 +1,57 @@
-# Nordic Drone Guard – Detection Core
+# Nordic Drone Guard Detection Core
 
-**Passive RF-based drone detection system**  
-Developed by [Nordic Drone Guard](https://ndguard.com) – protecting airspace for farms, construction sites, events, and municipalities.
+Passive radio frequency drone detection written in Python.  
+Transforms affordable software defined radios into a privacy friendly early warning system for unauthorised drones.
 
----
+***
 
-## 🛰️ What is NDG Detection Core?
+## Table of contents
 
-NDG Detection Core is the software component behind **Nordic Drone Guard**, a modular system that uses **passive radio frequency (RF) scanning** to detect unauthorized drones in real-time — without jamming, radar, or cameras.
+1. Vision  
+2. Core features  
+3. System architecture diagram  
+4. Hardware specifications  
+5. Installation guide  
+6. Daily operation  
+7. Folder map  
+8. Development workflow  
+9. Legal compliance notes  
+10. Business models and pricing  
+11. Roadmap  
+12. Frequently asked questions  
+13. Contributing guidelines  
+14. License  
+15. Contact information
 
-It’s designed to be:
-- **Stealthy**: fully passive, legal in the EU/Norway
-- **Affordable**: built for small/medium clients
-- **Customizable**: modular hardware + software
-- **Portable**: can run on embedded Linux, Raspberry Pi, or other SBCs
+***
 
----
+## 1. Vision
 
-## 🔧 How It Works
+Nordic Drone Guard aims to protect critical outdoor spaces without cameras, without jamming, and without heavy compute.  
+The Detection Core runs on a single board computer and listens for drone control links.  
+Small and mid‑sized customers gain professional airspace awareness at a fraction of legacy system cost.
 
-The system listens for known drone RF signatures (typically 2.4GHz and 5.8GHz control signals) and matches them using internal pattern recognition logic.
+***
 
-Key functions:
-- Detect drone presence based on RF traffic patterns
-- Estimate signal strength and distance
-- Identify probable drone types (Pro/Extreme models)
-- Send alerts to connected app or dashboard
+## 2. Core features
 
----
+* Fully passive scanning in the two point four to two point five giga hertz band  
+* One hundred predefined drone patterns stored in JSON  
+* Fast Fourier Transform for peak energy detection  
+* Confidence scoring that filters noisy environments  
+* Adaptive logging of unknown signals for future learning  
+* Plugin notifier writes to log file, JSON feed, or web socket  
+* Optional DJI Drone ID decoder if hardware supports wider bandwidth  
+* Apache two license encourages forks and external audits
 
-## 🧱 Core Modules
+***
 
-| Module | Description |
-|--------|-------------|
-| `rf_scanner/` | Low-level scanner that monitors RF spectrum |
-| `signal_patterns/` | Database of known drone control signal types |
-| `notifier/` | Alert system (email, log, webhook, or UI integration) |
-| `simulator/` | Tool to simulate drone signals for testing |
+## 3. System architecture
 
-> 💡 All modules are under development. Contributions are welcome once public alpha is released.
-
----
-
-## 📦 Hardware Compatibility
-
-Supports passive SDR receivers like:
-- **RTL-SDR**
-- **HackRF One**
-- **ADALM-Pluto**
-- **LimeSDR Mini**
-
-Runs on:
-- Raspberry Pi 4 / 5
-- Jetson Nano
-- x86_64 Linux (for desktop testing)
-
----
-
-## 🔐 Legal Compliance
-
-Nordic Drone Guard is designed to comply with:
-- **Norwegian Post and Telecommunications Authority (Nkom)**
-- **EU RF spectrum regulations**
-- **GDPR** (no camera/audio collection)
-- **No jamming or offensive components**
-
-Always check local laws before deployment.
-
----
-
-## 📈 Roadmap
-
-- [x] Project structure and repo setup
-- [x] Signal pattern database (basic models)
-- [ ] SDR live monitoring module
-- [ ] Desktop + mobile notifier system
-- [ ] Alpha field test on prototype device
-- [ ] GitHub Actions for build/test
-
----
-
-## 🧪 Demo & Testing
-
-Demo hardware is in development.  
-We are looking for **early testers, demo partners, and feedback**.  
-Contact: [info@ndguard.com](mailto:info@ndguard.com)
-
----
-
-## 📄 License
-
-Licensed under the **Apache 2.0 License** – see [LICENSE](LICENSE) for full details.
-
----
-
-## 👨‍💼 About the Project
-
-**Nordic Drone Guard** is a Norwegian startup (ENK org nr 935579945) focused on building privacy-friendly, legal, and cost-effective drone detection systems for everyday use.
-
-Visit [ndguard.com](https://ndguard.com) for more details or follow us on LinkedIn.
-
----
+```text
+        IQ samples
+Software Defined Radio  →  FFT and peak finder  →  Pattern matcher  →  Notifier
+                                                          ↑
+                                                          |
+                                            Unknown signal logger
 
