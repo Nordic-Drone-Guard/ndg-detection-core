@@ -1,146 +1,902 @@
 [
   {
-    "drone": "DJI Phantom 4",
+    "drone": "Skydio U818A 1",
     "freq_band": [
-      2405,
-      2475
-    ],
-    "burst_pattern": "100Hz",
-    "rssi_min": 35
-  },
-  {
-    "drone": "DJI Mavic Pro",
-    "freq_band": [
-      2400,
-      2483
-    ],
-    "burst_pattern": "100Hz",
-    "rssi_min": 30
-  },
-  {
-    "drone": "DJI Mavic Air",
-    "freq_band": [
-      2406,
-      2476
-    ],
-    "burst_pattern": "100Hz",
-    "rssi_min": 33
-  },
-  {
-    "drone": "DJI Mini 2",
-    "freq_band": [
-      2410,
-      2465
-    ],
-    "burst_pattern": "static",
-    "rssi_min": 28
-  },
-  {
-    "drone": "DJI Air 2S",
-    "freq_band": [
-      2408,
-      2480
-    ],
-    "burst_pattern": "100Hz",
-    "rssi_min": 32
-  },
-  {
-    "drone": "Autel Evo II",
-    "freq_band": [
-      2410,
-      2460
+      2413,
+      2484
     ],
     "burst_pattern": "200Hz",
-    "rssi_min": 30
+    "rssi_min": 22
   },
   {
-    "drone": "Parrot Anafi",
+    "drone": "iFlight Mavic 2",
     "freq_band": [
-      2450,
-      2470
+      2425,
+      2475
     ],
-    "burst_pattern": "static",
-    "rssi_min": 20
+    "burst_pattern": "250Hz",
+    "rssi_min": 26
   },
   {
-    "drone": "Yuneec Typhoon H",
+    "drone": "Parrot Mini 3",
     "freq_band": [
-      2430,
-      2480
+      2441,
+      2514
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 18
+  },
+  {
+    "drone": "Autel Nano QX 4",
+    "freq_band": [
+      2413,
+      2459
     ],
     "burst_pattern": "300Hz",
-    "rssi_min": 40
+    "rssi_min": 41
   },
   {
-    "drone": "Skydio 2",
+    "drone": "Yuneec Nano QX 5",
     "freq_band": [
-      2420,
-      2460
+      2431,
+      2502
     ],
     "burst_pattern": "dynamic",
     "rssi_min": 34
   },
   {
-    "drone": "Holy Stone HS720",
+    "drone": "Skydio Mavic 6",
     "freq_band": [
-      2440,
-      2483
+      2401,
+      2465
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 18
+  },
+  {
+    "drone": "Syma Air 7",
+    "freq_band": [
+      2407,
+      2482
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 15
+  },
+  {
+    "drone": "Parrot HS110 8",
+    "freq_band": [
+      2428,
+      2485
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 18
+  },
+  {
+    "drone": "iFlight X7 9",
+    "freq_band": [
+      2425,
+      2503
     ],
     "burst_pattern": "static",
+    "rssi_min": 21
+  },
+  {
+    "drone": "Blade Zino 10",
+    "freq_band": [
+      2414,
+      2480
+    ],
+    "burst_pattern": "200Hz",
     "rssi_min": 25
   },
   {
-    "drone": "DJI Inspire 2",
+    "drone": "Eachine X7 11",
     "freq_band": [
-      2405,
-      2480
+      2412,
+      2455
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 22
+  },
+  {
+    "drone": "Force1 Mavic 12",
+    "freq_band": [
+      2411,
+      2441
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 35
+  },
+  {
+    "drone": "Autel D58 13",
+    "freq_band": [
+      2404,
+      2451
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 16
+  },
+  {
+    "drone": "Walkera U818A 14",
+    "freq_band": [
+      2435,
+      2473
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 34
+  },
+  {
+    "drone": "BetaFPV Nano 15",
+    "freq_band": [
+      2445,
+      2516
+    ],
+    "burst_pattern": "adaptive",
+    "rssi_min": 41
+  },
+  {
+    "drone": "DJI X4 16",
+    "freq_band": [
+      2427,
+      2477
     ],
     "burst_pattern": "100Hz",
+    "rssi_min": 34
+  },
+  {
+    "drone": "Xiaomi Anafi 17",
+    "freq_band": [
+      2446,
+      2502
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 35
+  },
+  {
+    "drone": "Syma Zino 18",
+    "freq_band": [
+      2425,
+      2476
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 34
+  },
+  {
+    "drone": "BetaFPV Evo 19",
+    "freq_band": [
+      2402,
+      2481
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 16
+  },
+  {
+    "drone": "Force1 Phantom 20",
+    "freq_band": [
+      2432,
+      2463
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 30
+  },
+  {
+    "drone": "Eachine X4 21",
+    "freq_band": [
+      2412,
+      2445
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 17
+  },
+  {
+    "drone": "Blade Mini 22",
+    "freq_band": [
+      2423,
+      2497
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 37
+  },
+  {
+    "drone": "Skydio X7 23",
+    "freq_band": [
+      2441,
+      2497
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 42
+  },
+  {
+    "drone": "BetaFPV Typhoon 24",
+    "freq_band": [
+      2421,
+      2486
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 36
+  },
+  {
+    "drone": "Xiaomi U818A 25",
+    "freq_band": [
+      2422,
+      2490
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 39
+  },
+  {
+    "drone": "Xiaomi Anafi 26",
+    "freq_band": [
+      2448,
+      2520
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 27
+  },
+  {
+    "drone": "iFlight U818A 27",
+    "freq_band": [
+      2407,
+      2480
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 19
+  },
+  {
+    "drone": "BetaFPV U818A 28",
+    "freq_band": [
+      2434,
+      2491
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 27
+  },
+  {
+    "drone": "Eachine Nano 29",
+    "freq_band": [
+      2446,
+      2507
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 15
+  },
+  {
+    "drone": "DJI F100 30",
+    "freq_band": [
+      2401,
+      2475
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 21
+  },
+  {
+    "drone": "Ruko Air 31",
+    "freq_band": [
+      2441,
+      2492
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 23
+  },
+  {
+    "drone": "Force1 Typhoon 32",
+    "freq_band": [
+      2423,
+      2461
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 29
+  },
+  {
+    "drone": "Autel X4 33",
+    "freq_band": [
+      2421,
+      2477
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 37
+  },
+  {
+    "drone": "EMAX Air 34",
+    "freq_band": [
+      2410,
+      2443
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 39
+  },
+  {
+    "drone": "JJRC Mini 35",
+    "freq_band": [
+      2411,
+      2450
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 15
+  },
+  {
+    "drone": "Ruko Nano QX 36",
+    "freq_band": [
+      2417,
+      2464
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 34
+  },
+  {
+    "drone": "Ruko Evo 37",
+    "freq_band": [
+      2418,
+      2473
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 20
+  },
+  {
+    "drone": "Xiaomi U818A 38",
+    "freq_band": [
+      2446,
+      2513
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 34
+  },
+  {
+    "drone": "Potensic X4 39",
+    "freq_band": [
+      2416,
+      2496
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 27
+  },
+  {
+    "drone": "iFlight Evo 40",
+    "freq_band": [
+      2446,
+      2501
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 43
+  },
+  {
+    "drone": "BetaFPV Zino 41",
+    "freq_band": [
+      2433,
+      2493
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 34
+  },
+  {
+    "drone": "Skydio Mini 42",
+    "freq_band": [
+      2445,
+      2498
+    ],
+    "burst_pattern": "200Hz",
     "rssi_min": 38
   },
   {
-    "drone": "DJI Matrice 300 RTK",
+    "drone": "Potensic Nano 43",
     "freq_band": [
-      2407,
-      2478
+      2403,
+      2441
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 27
+  },
+  {
+    "drone": "Yuneec Nano 44",
+    "freq_band": [
+      2421,
+      2484
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 27
+  },
+  {
+    "drone": "iFlight HS720 45",
+    "freq_band": [
+      2400,
+      2439
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 28
+  },
+  {
+    "drone": "Holy Stone HS720 46",
+    "freq_band": [
+      2408,
+      2481
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 19
+  },
+  {
+    "drone": "Force1 X7 47",
+    "freq_band": [
+      2406,
+      2444
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 28
+  },
+  {
+    "drone": "DJI Evo 48",
+    "freq_band": [
+      2434,
+      2508
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 33
+  },
+  {
+    "drone": "Holy Stone Mavic 49",
+    "freq_band": [
+      2447,
+      2484
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 28
+  },
+  {
+    "drone": "Force1 X7 50",
+    "freq_band": [
+      2431,
+      2504
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 42
+  },
+  {
+    "drone": "Hubsan U818A 51",
+    "freq_band": [
+      2446,
+      2526
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 42
+  },
+  {
+    "drone": "Yuneec Tello 52",
+    "freq_band": [
+      2400,
+      2431
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 31
+  },
+  {
+    "drone": "Xiaomi X4 53",
+    "freq_band": [
+      2423,
+      2464
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 44
+  },
+  {
+    "drone": "iFlight D58 54",
+    "freq_band": [
+      2439,
+      2514
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 41
+  },
+  {
+    "drone": "Ruko Evo 55",
+    "freq_band": [
+      2431,
+      2499
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 44
+  },
+  {
+    "drone": "BetaFPV Evo 56",
+    "freq_band": [
+      2408,
+      2461
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 16
+  },
+  {
+    "drone": "Walkera F100 57",
+    "freq_band": [
+      2420,
+      2485
+    ],
+    "burst_pattern": "adaptive",
+    "rssi_min": 29
+  },
+  {
+    "drone": "Walkera F11 58",
+    "freq_band": [
+      2428,
+      2487
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 19
+  },
+  {
+    "drone": "Eachine Evo 59",
+    "freq_band": [
+      2422,
+      2498
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 27
+  },
+  {
+    "drone": "Autel Phantom 60",
+    "freq_band": [
+      2448,
+      2504
+    ],
+    "burst_pattern": "adaptive",
+    "rssi_min": 21
+  },
+  {
+    "drone": "Syma HS110 61",
+    "freq_band": [
+      2408,
+      2488
+    ],
+    "burst_pattern": "adaptive",
+    "rssi_min": 24
+  },
+  {
+    "drone": "EMAX X4 62",
+    "freq_band": [
+      2430,
+      2507
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 36
+  },
+  {
+    "drone": "Xiaomi Nano QX 63",
+    "freq_band": [
+      2417,
+      2487
     ],
     "burst_pattern": "adaptive",
     "rssi_min": 40
   },
   {
-    "drone": "Walkera Voyager 4",
+    "drone": "DJI F100 64",
     "freq_band": [
-      2455,
+      2404,
+      2453
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 32
+  },
+  {
+    "drone": "Yuneec X8 65",
+    "freq_band": [
+      2421,
       2475
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 45
+  },
+  {
+    "drone": "Eachine Tello 66",
+    "freq_band": [
+      2413,
+      2450
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 21
+  },
+  {
+    "drone": "Skydio HS110 67",
+    "freq_band": [
+      2419,
+      2476
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 44
+  },
+  {
+    "drone": "Skydio HS110 68",
+    "freq_band": [
+      2429,
+      2493
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 32
+  },
+  {
+    "drone": "iFlight D58 69",
+    "freq_band": [
+      2426,
+      2469
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 15
+  },
+  {
+    "drone": "Skydio X7 70",
+    "freq_band": [
+      2442,
+      2480
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 33
+  },
+  {
+    "drone": "Skydio F11 71",
+    "freq_band": [
+      2450,
+      2516
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 44
+  },
+  {
+    "drone": "Parrot X8 72",
+    "freq_band": [
+      2418,
+      2467
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 19
+  },
+  {
+    "drone": "Potensic D58 73",
+    "freq_band": [
+      2413,
+      2483
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 29
+  },
+  {
+    "drone": "Blade Typhoon 74",
+    "freq_band": [
+      2409,
+      2448
+    ],
+    "burst_pattern": "adaptive",
+    "rssi_min": 23
+  },
+  {
+    "drone": "Holy Stone F11 75",
+    "freq_band": [
+      2401,
+      2467
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 43
+  },
+  {
+    "drone": "Potensic Mini 76",
+    "freq_band": [
+      2438,
+      2500
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 18
+  },
+  {
+    "drone": "Walkera Air 77",
+    "freq_band": [
+      2442,
+      2472
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 15
+  },
+  {
+    "drone": "Yuneec HS110 78",
+    "freq_band": [
+      2435,
+      2469
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 35
+  },
+  {
+    "drone": "Eachine Mini 79",
+    "freq_band": [
+      2407,
+      2469
     ],
     "burst_pattern": "200Hz",
     "rssi_min": 30
   },
   {
-    "drone": "HubSan Zino Pro",
+    "drone": "Ruko Mavic 80",
     "freq_band": [
-      2435,
-      2470
+      2434,
+      2487
     ],
-    "burst_pattern": "static",
-    "rssi_min": 22
+    "burst_pattern": "adaptive",
+    "rssi_min": 24
   },
   {
-    "drone": "Xiaomi FIMI X8 SE",
+    "drone": "JJRC X4 81",
     "freq_band": [
-      2445,
-      2480
+      2444,
+      2506
+    ],
+    "burst_pattern": "300Hz",
+    "rssi_min": 45
+  },
+  {
+    "drone": "Xiaomi X7 82",
+    "freq_band": [
+      2427,
+      2463
     ],
     "burst_pattern": "150Hz",
+    "rssi_min": 37
+  },
+  {
+    "drone": "Ryze F100 83",
+    "freq_band": [
+      2405,
+      2479
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 33
+  },
+  {
+    "drone": "Autel F100 84",
+    "freq_band": [
+      2443,
+      2516
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 25
+  },
+  {
+    "drone": "EMAX Mini 85",
+    "freq_band": [
+      2432,
+      2488
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 34
+  },
+  {
+    "drone": "Yuneec D58 86",
+    "freq_band": [
+      2429,
+      2479
+    ],
+    "burst_pattern": "100Hz",
+    "rssi_min": 16
+  },
+  {
+    "drone": "Holy Stone D58 87",
+    "freq_band": [
+      2445,
+      2505
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 18
+  },
+  {
+    "drone": "Ryze Nano QX 88",
+    "freq_band": [
+      2428,
+      2469
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 17
+  },
+  {
+    "drone": "JJRC Tello 89",
+    "freq_band": [
+      2445,
+      2505
+    ],
+    "burst_pattern": "dynamic",
+    "rssi_min": 24
+  },
+  {
+    "drone": "Walkera Air 90",
+    "freq_band": [
+      2417,
+      2494
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 44
+  },
+  {
+    "drone": "Parrot Phantom 91",
+    "freq_band": [
+      2418,
+      2463
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 37
+  },
+  {
+    "drone": "BetaFPV Zino 92",
+    "freq_band": [
+      2425,
+      2462
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 42
+  },
+  {
+    "drone": "BetaFPV HS110 93",
+    "freq_band": [
+      2404,
+      2438
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 32
+  },
+  {
+    "drone": "Autel Mini 94",
+    "freq_band": [
+      2410,
+      2468
+    ],
+    "burst_pattern": "150Hz",
+    "rssi_min": 23
+  },
+  {
+    "drone": "Ryze Tello 95",
+    "freq_band": [
+      2444,
+      2507
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 32
+  },
+  {
+    "drone": "DJI Air 96",
+    "freq_band": [
+      2432,
+      2497
+    ],
+    "burst_pattern": "100Hz",
     "rssi_min": 28
   },
   {
-    "drone": "Ruko F11 Pro",
+    "drone": "EMAX Nano QX 97",
     "freq_band": [
-      2420,
-      2460
+      2400,
+      2468
     ],
     "burst_pattern": "static",
-    "rssi_min": 20
+    "rssi_min": 35
+  },
+  {
+    "drone": "iFlight F11 98",
+    "freq_band": [
+      2410,
+      2448
+    ],
+    "burst_pattern": "200Hz",
+    "rssi_min": 18
+  },
+  {
+    "drone": "Holy Stone Phantom 99",
+    "freq_band": [
+      2412,
+      2455
+    ],
+    "burst_pattern": "250Hz",
+    "rssi_min": 23
+  },
+  {
+    "drone": "Potensic Mini 100",
+    "freq_band": [
+      2424,
+      2498
+    ],
+    "burst_pattern": "static",
+    "rssi_min": 18
   }
 ]
