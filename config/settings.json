@@ -1,0 +1,6 @@
+{
+  "scan_interval_sec": 5,
+  "min_rssi_threshold": 25,
+  "log_file": "ndg_advanced.log",
+  "alert_output": "alerts.json"
+}
